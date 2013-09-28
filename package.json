@@ -1,0 +1,37 @@
+{
+  "name": "fantasy-oauth",
+  "version": "0.0.1",
+  "description": "Sample application that use's node.js to communicate with Yahoo Fantasy APIs",
+  "keywords": [
+    "yahoo",
+    "fantasy",
+    "oauth"
+  ],
+  "private": true,
+  "homepage": "https://github.com/akshayp/fantasy-oauth",
+  "bugs": "https://github.com/akshayp/fantasy-oauth/issues",
+  "author": {
+    "name": "Akshay Patel",
+    "email": "akshayrpatel@gmail.com",
+    "url": "https://github.com/akshayp"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/akshayp/fantasy-oauth.git"
+  },
+  "dependencies": {
+    "express": "3.x",
+    "everyauth": "*",
+    "express3-handlebars": "*",
+    "request": "*"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
+}

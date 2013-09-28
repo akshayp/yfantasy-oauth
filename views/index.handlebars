@@ -1,0 +1,24 @@
+{{#if everyauth.loggedIn}}
+    <div id="logout">
+        <h3>
+          <a href="{{everyauth.yahoo.user.profileUrl}}">
+            <img src="{{everyauth.yahoo.user.image.imageUrl}}" height="40" width="40"/>{{everyauth.yahoo.user.nickname}}
+          </a> is now authenticated to use the application
+        </h3>
+        <div class="pure-menu pure-menu-open">
+            <ul>
+                {{#each teams}}
+                    {{#with this}}
+                        <li><a href="{{url}}"><img height="40" width="40" src="{{team_logos.team_logo.url}}">{{name}}</a></li>
+                    {{/with}}
+                {{/each}}
+            </ul>
+        </div>
+        <a class="pure-button pure-button-warning" href="/logout">Logout</a>
+    </div>
+{{else}}
+    <div id="login">
+        <h3>Not Authenticated</h3>
+        <a class="pure-button pure-button-primary" href="/auth/yahoo">Sign in with a Yahoo id</a>
+    </div>
+{{/if}}
