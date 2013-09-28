@@ -21,6 +21,7 @@ app.use(express.bodyParser());
 app.use(express.cookieParser('shazam'));
 app.use(express.session());
 app.use(everyauth.middleware());
+app.use(express.static('public'));
 app.use(app.router);
 require('./conf/routes.js')(app);
 
