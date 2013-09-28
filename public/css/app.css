@@ -1,8 +1,8 @@
 body {
     color: #222;
     background-color: #ECECEC;
-    background-image: repeating-linear-gradient(45deg, transparent, transparent 1px, rgba(255,255,255,.5) 1px, rgba(255,255,255,.5) 2px);
-    background-size: 10%;
+    background-image: url(/img/bg.jpg);
+    background-size: 100%;
 }
 
 a { color: #3b8bba; text-decoration: none; }
@@ -26,7 +26,6 @@ img { vertical-align:  middle; border-radius: 50%; }
     display: block;
 }
 
-a.pure-button-primary { background: #6e329d; }
 a.pure-button-warning { background: #df7514; color: #FFF; }
 
 .pure-menu {
