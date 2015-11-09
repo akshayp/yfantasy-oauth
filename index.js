@@ -15,6 +15,7 @@ everyauth.everymodule.findUserById(users.findUser);
 everyauth.yahoo.consumerKey(config.consumer_key)
                .consumerSecret(config.consumer_secret)
                .findOrCreateUser(users.findOrCreateUser)
+               .apiHost('https://social.yahooapis.com/v1')
                .redirectPath('/');
 
 app.use(express.bodyParser());
